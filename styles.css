@@ -1,0 +1,54 @@
+body 
+{
+    background-color: darkgray;
+}
+
+.title
+{
+    margin-top: 0;
+    display: flex;
+    color: white;
+    background-color: black;
+    justify-content: center;
+}
+
+.name 
+{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: 0.7s;
+}
+
+.name:hover
+{
+    transform: scale(1.1);
+}
+
+.team
+{
+    display: flex;
+    margin-bottom: 15px;
+    background-color: rgb(161, 198, 27);
+}
+
+.field
+{
+    display: grid;
+    justify-content: center;
+    margin-top: 20%;
+    margin-right: 10%;
+    gap: 20px;
+}
+
+.login, .password
+{
+    width: 250px;
+    height: 30px; 
+    transition: 0.5s;
+}
+
+.login:focus, .password:focus {
+    outline: none;
+    border-color: #e74c3c;
+    box-shadow: 0 0 5px #e74c3c;
+  }
+  
