@@ -1,6 +1,6 @@
-body 
+.body 
 {
-    background-color: darkgray;
+    background-color: rgb(235, 229, 229);
 }
 
 .title
@@ -50,5 +50,10 @@ body
     outline: none;
     border-color: #e74c3c;
     box-shadow: 0 0 5px #e74c3c;
-  }
+}
   
+.main
+{
+    display: flex;
+    gap: 350px;
+}
