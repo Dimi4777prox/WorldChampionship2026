@@ -15,6 +15,25 @@ let first_tour = document.querySelector(".tour_1");
 let second_tour = document.querySelector(".tour_2");
 let third_tour = document.querySelector(".tour_3");
 let Top_scores = document.querySelector(".Top_scores");
+let Mexico = document.querySelectorAll(".Mexico");
+let team_input = document.querySelector(".team_input");
+let team_result = document.querySelector(".select_result");
+let submit_matches2 = document.querySelectorAll(".submit_match2");
+
+
+function match_input_edit(name, result, points)
+{
+    submit_match2.addEventListener("click", (event) => 
+    {
+        event.preventDefault();
+
+        let input = team_input.value;
+        if (input === "Мексика")
+        {
+            if (Number(Mexico[0].innerText) < 4) Mexico[1].innerText = Number(Mexico[0].innerText) += 1;
+        }
+    });
+}
 
 theme.addEventListener("click", (event) => 
 {
@@ -51,6 +70,24 @@ submit_match.addEventListener("click", (event) =>
     }
 });
 
+for (let submit_match2 of submit_matches2)
+{
+    submit_match2.addEventListener("click", (event) => 
+    {
+        event.preventDefault();
+
+        let input = team_input.value;
+        if (input == "Мексика")
+        {
+            if (Number(Mexico[1].innerText) < 3) Mexico[1].innerText = Number(Mexico[1].innerText) + 1;
+            let match_res = team_result.value;
+            if (match_res == "Победа")
+            {
+                Mexico[5].innerText = Number(Mexico[5].innerText) + 3;
+            }
+        }
+    });
+}
 // let login_result = login.value;
 // let password_result = password.value;
 // submit.addEventListener("click", (event) => 
