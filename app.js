@@ -2,10 +2,6 @@
 
 let emblem = document.getElementById("emblem");
 let title = document.querySelector(".name");
-let login = document.querySelector(".login");
-let password = document.querySelector(".password");
-let submit = document.querySelector(".submit");
-let result = document.querySelector(".result");
 let theme = document.querySelector(".theme");
 let main = document.querySelector(".main");
 let match = document.querySelector(".match");
@@ -20,20 +16,55 @@ let team_input = document.querySelector(".team_input");
 let team_result = document.querySelector(".select_result");
 let submit_matches2 = document.querySelectorAll(".submit_match2");
 
-
-function match_input_edit(name, result, points)
-{
-    submit_match2.addEventListener("click", (event) => 
-    {
-        event.preventDefault();
-
-        let input = team_input.value;
-        if (input === "Мексика")
-        {
-            if (Number(Mexico[0].innerText) < 4) Mexico[1].innerText = Number(Mexico[0].innerText) += 1;
-        }
-    });
-}
+let teams = {
+    "Мексика" : "Mexico",
+    "ЮАР" : "UAR",
+    "Южная Корея" : "Korea",
+    "Дания/Северная Македония/Чехия/Ирландия" : "Europe1",
+    "Канада" : "Canada",
+    "Италия/Северная Ирландия/Уэльс/Босния и Герциговина" : "Europe2",
+    "Катар" : "Katar",
+    "Швейцария" : "Shveitsaria",
+    "Бразилия" : "Brazilia",
+    "Морокко" : "Morocco",
+    "Гаити" : "Haiti",
+    "Шотландия" : "Scotland",
+    "США" : "USA",
+    "Парагвай" : "Paraguai",
+    "Австралия" : "Australia",
+    "Словакия/Косово/Турция/Румыния" : "Europe3",
+    "Германия" : "Germany",
+    "Кюрасао" : "Kurasao",
+    "Кот-д'Ивуар" : "Kot-Divuar",
+    "Эквадор" : "Ecuador",
+    "Недерланды" : "Netherland",
+    "Япония" : "Japan",
+    "Украина/Швеция/Польша/Албания" : "Europe4",
+    "Тунис" : "Tunisia",
+    "Бельгия" : "Belgium",
+    "Египет" : "Egipt",
+    "Иран" : "Iran",
+    "Новая Зеландия" : "NewZeland",
+    "Испания" : "Spain",
+    "Кабо-Верде" : "CaboVerde",
+    "Саудовская Аравия" : "SaudiAravia",
+    "Уругвай" : "Uruguai",
+    "Франция" : "France",
+    "Сенегал" : "Senegal",
+    "Ирак/Суринам" : "Africa1",
+    "Норвегия" : "Norway",
+    "Аргентина" : "Argentina",
+    "Алжир" : "Algeria",
+    "Австрия" : "Austria",
+    "Иордания" : "Jordan",
+    "Португалия" : "Portugal",
+    "Ямайка/Конго" : "Africa2",
+    "Узбекистан" : "Uzbekistan",
+    "Англия" : "England",
+    "Хорватия" : "Croatia",
+    "Гана" : "Hana",
+    "Панама" : "Panama"
+};
 
 theme.addEventListener("click", (event) => 
 {
@@ -77,54 +108,13 @@ for (let submit_match2 of submit_matches2)
         event.preventDefault();
 
         let input = team_input.value;
-        if (input == "Мексика")
+        let team = "." + teams[input];
+        if (Number(document.querySelectorAll(team)[1].innerText) < 3) document.querySelectorAll(team)[1].innerText = Number(document.querySelectorAll(team)[1].innerText) + 1;
+        let match_res = team_result.value;
+        if (match_res == "Победа")
         {
-            if (Number(Mexico[1].innerText) < 3) Mexico[1].innerText = Number(Mexico[1].innerText) + 1;
-            let match_res = team_result.value;
-            if (match_res == "Победа")
-            {
-                Mexico[5].innerText = Number(Mexico[5].innerText) + 3;
-            }
+            Mexico[5].innerText = Number(Mexico[5].innerText) + 3;
         }
     });
 }
-// let login_result = login.value;
-// let password_result = password.value;
-// submit.addEventListener("click", (event) => 
-// {
-//     event.preventDefault();
 
-//     fetch("http://web4.informatics.ru:82/api/e0fc71f082864e2c59fb3cf23ad9f6c8/logins")
-//         .then(function(response)
-//         {
-//             if (response.ok)
-//             {
-//                 let data = response.json();
-//                 if (login_result in data)
-//                 {
-//                     if (data[login_result] == password_result)
-//                     {
-//                         result.innerText = "Вы успешно вошли в свой аккаунт!";
-//                     }
-//                     else
-//                     {
-//                         result.innerText = "Неправильно введён логин или пароль..."
-//                     }
-//                 }
-//                 else
-//                 {
-//                     data[login_result] = password_result;
-//                     console.log("OK");
-//                     result.innerText = "Вы зарегистрированы на сайт!";
-//                     login.style.outline = "none";
-//                     login.style.borderColor = "Green";
-//                     password.style.outline = "none";
-//                     password.style.borderColor = "Green";
-//                     fetch("http://web4.informatics.ru:82/api/e0fc71f082864e2c59fb3cf23ad9f6c8/logins",
-//                     {
-//                         method: 'POST'
-//                     });
-//                 }
-//             }
-//         });
-// });
