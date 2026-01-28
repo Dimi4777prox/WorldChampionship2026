@@ -2,7 +2,6 @@
 
 let emblem = document.getElementById("emblem");
 let title = document.querySelector(".name");
-let theme = document.querySelector(".theme");
 let main = document.querySelector(".main");
 let match = document.querySelector(".match");
 let submit_match = document.querySelector(".submit_match");
@@ -66,14 +65,6 @@ let teams = {
     "Панама" : "Panama"
 };
 
-theme.addEventListener("click", (event) => 
-{
-    if (main.style.backgroundColor == "rgb(235, 229, 229)")
-    {
-        main.style.backgroundColor = "black";
-    }
-});
-
 
 submit_match.addEventListener("click", (event) => 
 {
@@ -117,4 +108,5 @@ for (let submit_match2 of submit_matches2)
         }
     });
 }
+
 
