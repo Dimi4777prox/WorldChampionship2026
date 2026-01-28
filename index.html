@@ -12,12 +12,19 @@
         <h1 class = "name header">Чемпионат мира по футболу 2026</h1>
         <a href="login.html">Зарегистрироваться</a>
         <p class = "profile"></p>
-        <button type="button" class = "theme"> 🌞</button>
     </div>
 
     <div class="main">
         <div class="groups">
             <h2 class = "name_group">Группы</h2>
+            <input type="text" class="team_input" placeholder="Название команды" required>
+            <select name="select_result" class = "select_result" required>
+                <option value="1">Победа</option>
+                <option value="2">Ничья</option>
+                <option value="3">Поражение</option>
+            </select>
+            <input type="text" class = "balls" placeholder="Разница мячей" required>
+            <button type="submit" class = "submit_match2">Результат в таблицу.</button>
             <div class = "group A">
                 <h4>Группа А</h4>
                 <table id="A">
@@ -31,54 +38,45 @@
                             <th>Очки</th>
                         </tr>
                         <tr>
-                            <td class="name Mexico">Мексика</td>
-                            <td class="games Mexico">0</td>
-                            <td class="wins Mexico">0</td>
-                            <td class="draws Mexico">0</td>
-                            <td class="loses Mexico">0</td>
-                            <td class="balls Mexico">0</td>
-                            <td class="points Mexico">0</td>
+                            <td class="Mexico">Мексика</td>
+                            <td class="Mexico">0</td>
+                            <td class="Mexico">0</td>
+                            <td class="Mexico">0</td>
+                            <td class="Mexico">0</td>
+                            <td class="Mexico">0</td>
+                            <td class="Mexico">0</td>
                         </tr>
 
                         <tr>
-                            <td>ЮАР</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
+                            <td class = "UAR">ЮАР</td>
+                            <td class = "UAR">0</td>
+                            <td class = "UAR">0</td>
+                            <td class = "UAR">0</td>
+                            <td class = "UAR">0</td>
+                            <td class = "UAR">0</td>
+                            <td class = "UAR">0</td>
                         </tr>
 
                         <tr>
-                            <td>Южная Корея</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
+                            <td class = "Korea">Южная Корея</td>
+                            <td class = "Korea">0</td>
+                            <td class = "Korea">0</td>
+                            <td class = "Korea">0</td>
+                            <td class = "Korea">0</td>
+                            <td class = "Korea">0</td>
+                            <td class = "Korea">0</td>
                         </tr>
 
                         <tr>
-                            <td>Дания/Северная Македония/Чехия/Ирландия</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
+                            <td class = "Europe1">Дания/Северная Македония/Чехия/Ирландия</td>
+                            <td class = "Europe1">0</td>
+                            <td class = "Europe1">0</td>
+                            <td class = "Europe1">0</td>
+                            <td class = "Europe1">0</td>
+                            <td class = "Europe1">0</td>
+                            <td class = "Europe1">0</td>
                         </tr>
                 </table>
-
-                <input type="text" class="team_input" placeholder="Название команды" required>
-                <select name="select_result" class = "select_result" required>
-                    <option value="1">Победа</option>
-                    <option value="2">Ничья</option>
-                    <option value="3">Поражение</option>
-                </select>
-                <input type="text" class = "balls" placeholder="Разница мячей" required>
-                <button type="submit" class = "submit_match2">Результат в таблицу.</button>      
 
             </div>
             <h4>Группа B</h4>
@@ -93,43 +91,43 @@
                     <th>Очки</th>
                 </tr>
                 <tr>
-                    <td>Канада</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
+                    <td class = "Canada">Канада</td>
+                    <td class = "Canada">0</td>
+                    <td class = "Canada">0</td>
+                    <td class = "Canada">0</td>
+                    <td class = "Canada">0</td>
+                    <td class = "Canada">0</td>
+                    <td class = "Canada">0</td>
                 </tr>
 
                 <tr>
-                    <td>Италия/Северная Ирландия/Уэльс/Босния и Герциговина</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
+                    <td class = "Europe2">Италия/Северная Ирландия/Уэльс/Босния и Герциговина</td>
+                    <td class = "Europe2">0</td>
+                    <td class = "Europe2">0</td>
+                    <td class = "Europe2">0</td>
+                    <td class = "Europe2">0</td>
+                    <td class = "Europe2">0</td>
+                    <td class = "Europe2">0</td>
                 </tr>
 
                 <tr>
-                    <td>Катар</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
+                    <td class = "Katar">Катар</td>
+                    <td class = "Katar">0</td>
+                    <td class = "Katar">0</td>
+                    <td class = "Katar">0</td>
+                    <td class = "Katar">0</td>
+                    <td class = "Katar">0</td>
+                    <td class = "Katar">0</td>
                 </tr>
 
                 <tr>
-                    <td>Швейцария</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
+                    <td class = "Shveitsaria">Швейцария</td>
+                    <td class = "Shveitsaria">0</td>
+                    <td class = "Shveitsaria">0</td>
+                    <td class = "Shveitsaria">0</td>
+                    <td class = "Shveitsaria">0</td>
+                    <td class = "Shveitsaria">0</td>
+                    <td class = "Shveitsaria">0</td>
                 </tr>
         </table>
 
@@ -145,43 +143,43 @@
                     <th>Очки</th>
                 </tr>
                 <tr>
-                    <td>Бразилия</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
+                    <td class = "Brazilia">Бразилия</td>
+                    <td class = "Brazilia">0</td>
+                    <td class = "Brazilia">0</td>
+                    <td class = "Brazilia">0</td>
+                    <td class = "Brazilia">0</td>
+                    <td class = "Brazilia">0</td>
+                    <td class = "Brazilia">0</td>
                 </tr>
 
                 <tr>
-                    <td>Морокко</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
+                    <td class = "Morocco">Морокко</td>
+                    <td class = "Morocco">0</td>
+                    <td class = "Morocco">0</td>
+                    <td class = "Morocco">0</td>
+                    <td class = "Morocco">0</td>
+                    <td class = "Morocco">0</td>
+                    <td class = "Morocco">0</td>
                 </tr>
 
                 <tr>
-                    <td>Гаити</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
+                    <td class = "Haiti">Гаити</td>
+                    <td class = "Haiti">0</td>
+                    <td class = "Haiti">0</td>
+                    <td class = "Haiti">0</td>
+                    <td class = "Haiti">0</td>
+                    <td class = "Haiti">0</td>
+                    <td class = "Haiti">0</td>
                 </tr>
 
                 <tr>
-                    <td>Шотландия</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
+                    <td class = "Scotland">Шотландия</td>
+                    <td class = "Scotland">0</td>
+                    <td class = "Scotland">0</td>
+                    <td class = "Scotland">0</td>
+                    <td class = "Scotland">0</td>
+                    <td class = "Scotland">0</td>
+                    <td class = "Scotland">0</td>
                 </tr>
         </table>
 
@@ -197,43 +195,43 @@
                     <th>Очки</th>
                 </tr>
                 <tr>
-                    <td>США</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
+                    <td class = "USA">США</td>
+                    <td class = "USA">0</td>
+                    <td class = "USA">0</td>
+                    <td class = "USA">0</td>
+                    <td class = "USA">0</td>
+                    <td class = "USA">0</td>
+                    <td class = "USA">0</td>
                 </tr>
 
                 <tr>
-                    <td>Парагвай</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
+                    <td class = "Paraguai">Парагвай</td>
+                    <td class = "Paraguai">0</td>
+                    <td class = "Paraguai">0</td>
+                    <td class = "Paraguai">0</td>
+                    <td class = "Paraguai">0</td>
+                    <td class = "Paraguai">0</td>
+                    <td class = "Paraguai">0</td>
                 </tr>
 
                 <tr>
-                    <td>Австралия</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
+                    <td class = "Australia">Австралия</td>
+                    <td class = "Australia">0</td>
+                    <td class = "Australia">0</td>
+                    <td class = "Australia">0</td>
+                    <td class = "Australia">0</td>
+                    <td class = "Australia">0</td>
+                    <td class = "Australia">0</td>
                 </tr>
 
                 <tr>
-                    <td>Словакия/Косово/Турция/Румыния</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
+                    <td class = "Europe3">Словакия/Косово/Турция/Румыния</td>
+                    <td class = "Europe3">0</td>
+                    <td class = "Europe3">0</td>
+                    <td class = "Europe3">0</td>
+                    <td class = "Europe3">0</td>
+                    <td class = "Europe3">0</td>
+                    <td class = "Europe3">0</td>
                 </tr>
         </table>
 
@@ -249,7 +247,292 @@
                     <th>Очки</th>
                 </tr>
                 <tr>
-                    <td>Германия</td>
+                    <td class = "Germany">Германия</td>
+                    <td class = "Germany">0</td>
+                    <td class = "Germany">0</td>
+                    <td class = "Germany">0</td>
+                    <td class = "Germany">0</td>
+                    <td class = "Germany">0</td>
+                    <td class = "Germany">0</td>
+                </tr>
+
+                <tr>
+                    <td class = "Kurasao">Кюрасао</td>
+                    <td class = "Kurasao">0</td>
+                    <td class = "Kurasao">0</td>
+                    <td class = "Kurasao">0</td>
+                    <td class = "Kurasao">0</td>
+                    <td class = "Kurasao">0</td>
+                    <td class = "Kurasao">0</td>
+                </tr>
+
+                <tr>
+                    <td class = "Kot-Divuar">Кот-д'Ивуар</td>
+                    <td class = "Kot-Divuar">0</td>
+                    <td class = "Kot-Divuar">0</td>
+                    <td class = "Kot-Divuar">0</td>
+                    <td class = "Kot-Divuar">0</td>
+                    <td class = "Kot-Divuar">0</td>
+                    <td class = "Kot-Divuar">0</td>
+                </tr>
+
+                <tr>
+                    <td class = "Ecuador">Эквадор</td>
+                    <td class = "Ecuador">0</td>
+                    <td class = "Ecuador">0</td>
+                    <td class = "Ecuador">0</td>
+                    <td class = "Ecuador">0</td>
+                    <td class = "Ecuador">0</td>
+                    <td class = "Ecuador">0</td>
+                </tr>
+        </table>
+        </div>
+
+        <h4>Группа F</h4>
+            <table id="B">
+                <tr style="background-color: azure;">
+                    <th>Название</th>
+                    <th>Игры</th>
+                    <th>Победы</th>
+                    <th>Ничьи</th>
+                    <th>Поражения</th>
+                    <th>Разница мячей</th>
+                    <th>Очки</th>
+                </tr>
+                <tr>
+                    <td class = "Netherland">Нидерланды</td>
+                    <td class = "Netherland">0</td>
+                    <td class = "Netherland">0</td>
+                    <td class = "Netherland">0</td>
+                    <td class = "Netherland">0</td>
+                    <td class = "Netherland">0</td>
+                    <td class = "Netherland">0</td>
+                </tr>
+
+                <tr>
+                    <td class = "Japan">Япония</td>
+                    <td class = "Japan">0</td>
+                    <td class = "Japan">0</td>
+                    <td class = "Japan">0</td>
+                    <td class = "Japan">0</td>
+                    <td class = "Japan">0</td>
+                    <td class = "Japan">0</td>
+                </tr>
+
+                <tr>
+                    <td class = "Europe4">Украина/Швеция/Польша/Албания</td>
+                    <td class = "Europe4">0</td>
+                    <td class = "Europe4">0</td>
+                    <td class = "Europe4">0</td>
+                    <td class = "Europe4">0</td>
+                    <td class = "Europe4">0</td>
+                    <td class = "Europe4">0</td>
+                </tr>
+
+                <tr>
+                    <td class = "Tunisia">Тунис</td>
+                    <td class = "Tunisia">0</td>
+                    <td class = "Tunisia">0</td>
+                    <td class = "Tunisia">0</td>
+                    <td class = "Tunisia">0</td>
+                    <td class = "Tunisia">0</td>
+                    <td class = "Tunisia">0</td>
+                </tr>
+        </table>
+        </div>
+
+        <h4>Группа G</h4>
+            <table id="B">
+                <tr style="background-color: azure;">
+                    <th>Название</th>
+                    <th>Игры</th>
+                    <th>Победы</th>
+                    <th>Ничьи</th>
+                    <th>Поражения</th>
+                    <th>Разница мячей</th>
+                    <th>Очки</th>
+                </tr>
+                <tr>
+                    <td class = "Belgium">Бельгия</td>
+                    <td class = "Belgium">0</td>
+                    <td class = "Belgium">0</td>
+                    <td class = "Belgium">0</td>
+                    <td class = "Belgium">0</td>
+                    <td class = "Belgium">0</td>
+                    <td class = "Belgium">0</td>
+                </tr>
+
+                <tr>
+                    <td class = "Egipt">Египет</td>
+                    <td class = "Egipt">0</td>
+                    <td class = "Egipt">0</td>
+                    <td class = "Egipt">0</td>
+                    <td class = "Egipt">0</td>
+                    <td class = "Egipt">0</td>
+                    <td class = "Egipt">0</td>
+                </tr>
+
+                <tr>
+                    <td class = "Iran">Иран</td>
+                    <td class = "Iran">0</td>
+                    <td class = "Iran">0</td>
+                    <td class = "Iran">0</td>
+                    <td class = "Iran">0</td>
+                    <td class = "Iran">0</td>
+                    <td class = "Iran">0</td>
+                </tr>
+
+                <tr>
+                    <td class = "NewZeland">Новая Зеландия</td>
+                    <td class = "NewZeland">0</td>
+                    <td class = "NewZeland">0</td>
+                    <td class = "NewZeland">0</td>
+                    <td class = "NewZeland">0</td>
+                    <td class = "NewZeland">0</td>
+                    <td class = "NewZeland">0</td>
+                </tr>
+        </table>
+        </div>
+        
+        <h4>Группа H</h4>
+            <table id="B">
+                <tr style="background-color: azure;">
+                    <th>Название</th>
+                    <th>Игры</th>
+                    <th>Победы</th>
+                    <th>Ничьи</th>
+                    <th>Поражения</th>
+                    <th>Разница мячей</th>
+                    <th>Очки</th>
+                </tr>
+                <tr>
+                    <td class = "Spain">Испания</td>
+                    <td class = "Spain">0</td>
+                    <td class = "Spain">0</td>
+                    <td class = "Spain">0</td>
+                    <td class = "Spain">0</td>
+                    <td class = "Spain">0</td>
+                    <td class = "Spain">0</td>
+                </tr>
+
+                <tr>
+                    <td class = "CaboVerde">Кабо-Верде</td>
+                    <td class = "CaboVerde">0</td>
+                    <td class = "CaboVerde">0</td>
+                    <td class = "CaboVerde">0</td>
+                    <td class = "CaboVerde">0</td>
+                    <td class = "CaboVerde">0</td>
+                    <td class = "CaboVerde">0</td>
+                </tr>
+
+                <tr>
+                    <td class = "SaudiAravia">Саудовская Аравия</td>
+                    <td class = "SaudiAravia">0</td>
+                    <td class = "SaudiAravia">0</td>
+                    <td class = "SaudiAravia">0</td>
+                    <td class = "SaudiAravia">0</td>
+                    <td class = "SaudiAravia">0</td>
+                    <td class = "SaudiAravia">0</td>
+                </tr>
+
+                <tr>
+                    <td class = "Uruguai">Уругвай</td>
+                    <td class = "Uruguai">0</td>
+                    <td class = "Uruguai">0</td>
+                    <td class = "Uruguai">0</td>
+                    <td class = "Uruguai">0</td>
+                    <td class = "Uruguai">0</td>
+                    <td class = "Uruguai">0</td>
+                </tr>
+        </table>
+        </div>
+
+        <h4>Группа I</h4>
+            <table id="B">
+                <tr style="background-color: azure;">
+                    <th>Название</th>
+                    <th>Игры</th>
+                    <th>Победы</th>
+                    <th>Ничьи</th>
+                    <th>Поражения</th>
+                    <th>Разница мячей</th>
+                    <th>Очки</th>
+                </tr>
+                <tr>
+                    <td class = "France">Франция</td>
+                    <td class = "France">0</td>
+                    <td class = "France">0</td>
+                    <td class = "France">0</td>
+                    <td class = "France">0</td>
+                    <td class = "France">0</td>
+                    <td class = "France">0</td>
+                </tr>
+
+                <tr>
+                    <td class = "Senegal">Сенегал</td>
+                    <td class = "Senegal">0</td>
+                    <td class = "Senegal">0</td>
+                    <td class = "Senegal">0</td>
+                    <td class = "Senegal">0</td>
+                    <td class = "Senegal">0</td>
+                    <td class = "Senegal">0</td>
+                </tr>
+
+                <tr>
+                    <td class = "Africa1">Ирак/Суринам</td>
+                    <td class = "Africa1">0</td>
+                    <td class = "Africa1">0</td>
+                    <td class = "Africa1">0</td>
+                    <td class = "Africa1">0</td>
+                    <td class = "Africa1">0</td>
+                    <td class = "Africa1">0</td>
+                </tr>
+
+                <tr>
+                    <td class = "Norway">Норвегия</td>
+                    <td class = "Norway">0</td>
+                    <td class = "Norway">0</td>
+                    <td class = "Norway">0</td>
+                    <td class = "Norway">0</td>
+                    <td class = "Norway">0</td>
+                    <td class = "Norway">0</td>
+                </tr>
+        </table>
+        </div>
+
+        <h4>Группа J</h4>
+            <table id="B">
+                <tr style="background-color: azure;">
+                    <th>Название</th>
+                    <th>Игры</th>
+                    <th>Победы</th>
+                    <th>Ничьи</th>
+                    <th>Поражения</th>
+                    <th>Разница мячей</th>
+                    <th>Очки</th>
+                </tr>
+                <tr>
+                    <td class = "Argentina">Аргентина</td>
+                    <td class = "Argentina">0</td>
+                    <td class = "Argentina">0</td>
+                    <td class = "Argentina">0</td>
+                    <td class = "Argentina">0</td>
+                    <td class = "Argentina">0</td>
+                    <td class = "Argentina">0</td>
+                </tr>
+
+                <tr>
+                    <td class = "Algeria">Алжир</td>
+                    <td class = "Algeria">0</td>
+                    <td class = "Algeria">0</td>
+                    <td class = "Algeria">0</td>
+                    <td class = "Algeria">0</td>
+                    <td class = "Algeria">0</td>
+                    <td class = "Algeria">0</td>
+                </tr>
+
+                <tr>
+                    <td class = "Austria">Австрия</td>
                     <td>0</td>
                     <td>0</td>
                     <td>0</td>
@@ -259,33 +542,119 @@
                 </tr>
 
                 <tr>
-                    <td>Кюрасао</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
+                    <td class = "Jordan">Иордания</td>
+                    <td class = "Jordan">0</td>
+                    <td class = "Jordan">0</td>
+                    <td class = "Jordan">0</td>
+                    <td class = "Jordan">0</td>
+                    <td class = "Jordan">0</td>
+                    <td class = "Jordan">0</td>
+                </tr>
+        </table>
+        </div>
+
+        <h4>Группа K</h4>
+            <table id="B">
+                <tr style="background-color: azure;">
+                    <th>Название</th>
+                    <th>Игры</th>
+                    <th>Победы</th>
+                    <th>Ничьи</th>
+                    <th>Поражения</th>
+                    <th>Разница мячей</th>
+                    <th>Очки</th>
+                </tr>
+                <tr>
+                    <td class = "Portugal">Португалия</td>
+                    <td class = "Portugal">0</td>
+                    <td class = "Portugal">0</td>
+                    <td class = "Portugal">0</td>
+                    <td class = "Portugal">0</td>
+                    <td class = "Portugal">0</td>
+                    <td class = "Portugal">0</td>
                 </tr>
 
                 <tr>
-                    <td>Кот-д'Ивуар</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
+                    <td class = "Africa2">Ямайка/Конго</td>
+                    <td class = "Africa2">0</td>
+                    <td class = "Africa2">0</td>
+                    <td class = "Africa2">0</td>
+                    <td class = "Africa2">0</td>
+                    <td class = "Africa2">0</td>
+                    <td class = "Africa2">0</td>
                 </tr>
 
                 <tr>
-                    <td>Эквадор</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
+                    <td class = "Uzbekistan">Узбекистан</td>
+                    <td class = "Uzbekistan">0</td>
+                    <td class = "Uzbekistan">0</td>
+                    <td class = "Uzbekistan">0</td>
+                    <td class = "Uzbekistan">0</td>
+                    <td class = "Uzbekistan">0</td>
+                    <td class = "Uzbekistan">0</td>
+                </tr>
+
+                <tr>
+                    <td class = "Columbia">Колумбия</td>
+                    <td class = "Columbia">0</td>
+                    <td class = "Columbia">0</td>
+                    <td class = "Columbia">0</td>
+                    <td class = "Columbia">0</td>
+                    <td class = "Columbia">0</td>
+                    <td class = "Columbia">0</td>
+                </tr>
+        </table>
+        </div>
+
+        <h4>Группа L</h4>
+            <table id="B">
+                <tr style="background-color: azure;">
+                    <th>Название</th>
+                    <th>Игры</th>
+                    <th>Победы</th>
+                    <th>Ничьи</th>
+                    <th>Поражения</th>
+                    <th>Разница мячей</th>
+                    <th>Очки</th>
+                </tr>
+                <tr>
+                    <td class = "England">Англия</td>
+                    <td class = "England">0</td>
+                    <td class = "England">0</td>
+                    <td class = "England">0</td>
+                    <td class = "England">0</td>
+                    <td class = "England">0</td>
+                    <td class = "England">0</td>
+                </tr>
+
+                <tr>
+                    <td class = "Croatia">Хорватия</td>
+                    <td class = "Croatia">0</td>
+                    <td class = "Croatia">0</td>
+                    <td class = "Croatia">0</td>
+                    <td class = "Croatia">0</td>
+                    <td class = "Croatia">0</td>
+                    <td class = "Croatia">0</td>
+                </tr>
+
+                <tr>
+                    <td class = "Hana">Гана</td>
+                    <td class = "Hana">0</td>
+                    <td class = "Hana">0</td>
+                    <td class = "Hana">0</td>
+                    <td class = "Hana">0</td>
+                    <td class = "Hana">0</td>
+                    <td class = "Hana">0</td>
+                </tr>
+
+                <tr>
+                    <td class = "Panama">Панама</td>
+                    <td class = "Panama">0</td>
+                    <td class = "Panama">0</td>
+                    <td class = "Panama">0</td>
+                    <td class = "Panama">0</td>
+                    <td class = "Panama">0</td>
+                    <td class = "Panama">0</td>
                 </tr>
         </table>
         </div>
